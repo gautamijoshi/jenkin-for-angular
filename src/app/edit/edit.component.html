@@ -1,0 +1,28 @@
+
+<form (ngSubmit)="Update()">
+    <legend>Update Product</legend>
+
+    <div class="form-group">
+        <label for="Prod_No">Product No</label>
+        <input type="text" class="form-control"
+         id="Prod_No" name="Prod_No" placeholder="Prod_No"
+         [(ngModel)]="prod.Prod_No">
+    </div>
+
+    <div class="form-group">
+        <label for="Prod_Name">Product Name</label>
+        <input type="text" class="form-control"
+         id="Prod_Name" name="Prod_Name" placeholder="Prod_Name"
+         [(ngModel)]="prod.Prod_Name">
+    </div>
+
+    <div class="form-group">
+        <label for="Prod_price">Product Price</label>
+        <input type="text" class="form-control"
+         id="Prod_price" name="Prod_price" placeholder="Prod_price"
+         [(ngModel)]="prod.Prod_price">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
